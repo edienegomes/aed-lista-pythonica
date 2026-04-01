@@ -1,17 +1,11 @@
+#Substitui um convidado indisponível por outro.
 def modify_guest_list(
     guests: list[str],
     unavailable: str,
     new_guest: str
 ) -> list[str]:
-    """
-    Substitui um convidado indisponível por outro.
+    
+    posicao = guests.index(unavailable)
+    guests[posicao] = new_guest
 
-    Args:
-        guests (list[str]): lista original
-        unavailable (str): convidado a ser removido
-        new_guest (str): novo convidado
-
-    Returns:
-        list[str]: lista atualizada
-    """
-    pass
+    return guests
