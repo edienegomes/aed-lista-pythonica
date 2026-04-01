@@ -1,11 +1,8 @@
+#Recebe uma lista de nomes e retorna uma nova lista com mensagens.
 def greet_names(names: list[str]) -> list[str]:
-    """
-    Retorna uma lista de saudações para cada nome.
+    lista_names = []
 
-    Args:
-        names (list[str]): lista de nomes
+    for name in names:
+        lista_names.append(f"Hello, {name}!")
 
-    Returns:
-        list[str]: lista com mensagens "Hello, <name>!"
-    """
-    pass
+    return lista_names
