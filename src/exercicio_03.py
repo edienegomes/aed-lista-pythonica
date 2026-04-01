@@ -1,11 +1,5 @@
+#Recebe um nome e retorna uma saudação
 def personal_message(name: str) -> str:
-    """
-    Retorna uma saudação personalizada.
+    nome = name
 
-    Args:
-        name (str): nome da pessoa
-
-    Returns:
-        str: saudação no formato "Hello, <name>!"
-    """
-    pass
+    return f"Hello, {nome}!"
