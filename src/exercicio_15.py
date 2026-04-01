@@ -1,11 +1,8 @@
+#Calcula a soma dos números de 1 até n.
 def sum_numbers(n: int) -> int:
-    """
-    Calcula a soma dos números de 1 até n.
+    soma = 0
 
-    Args:
-        n (int): limite superior
+    for i in range (1, n + 1):
+        soma += i
 
-    Returns:
-        int: soma total
-    """
-    pass
+    return soma
